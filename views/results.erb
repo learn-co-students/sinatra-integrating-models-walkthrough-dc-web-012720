@@ -1,9 +1,12 @@
 <h1>Your Text Analysis</h1>
 
 <h2>Number of Words: </h2>
+<p>Number of Words: <%= @text_from_user.split(' ').length %></p>
 
 <h2>Vowels: </h2>
+<p>Vowels: <%=@vowels%> </p>
 
 <h2>Consonants: </h2>
-
+<p>Consonants: <%=@consonants%> </p>
 <h2>Most Common Letter: _____ used _____ times</h2>
+<p>Most Common Letter: <%=@max_kv_pair[0].upcase%>, used <%=@max_kv_pair[1]%> times</p>
